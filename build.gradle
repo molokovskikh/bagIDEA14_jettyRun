@@ -1,0 +1,23 @@
+apply plugin:'java'
+apply plugin:'application'
+apply plugin:'jetty'
+
+war {          
+    webXml = file('WEB-INF/web.xml')
+}
+
+repositories {
+    mavenCentral()
+}
+
+jettyRun {
+
+            dependencies{
+                compile 'javax.servlet:servlet-api:2.4'
+            }
+}
+
+run {
+    mainClassName = 'org.example.AppConsole'
+}
+
