@@ -2,6 +2,10 @@ apply plugin:'java'
 apply plugin:'application'
 apply plugin:'jetty'
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
 war {          
     webXml = file('WEB-INF/web.xml')
 }
