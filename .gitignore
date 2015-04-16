@@ -1,0 +1,11 @@
+build
+*.iml
+*.ipr
+*.iws
+*.ids
+.idea
+.gradle
+gradle
+gradlew.bat
+gradlew
+gradle.properties

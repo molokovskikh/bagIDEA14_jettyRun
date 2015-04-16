@@ -15,8 +15,7 @@ repositories {
 }
 
 jettyRun {
-
-            dependencies{
+    dependencies{
                 compile 'javax.servlet:servlet-api:2.4'
             }
 }
